@@ -9,7 +9,7 @@ const AboutUs = () => {
                 <form method = "">
                     <div className = "row">
                         <div className = "col-md-6">
-                            <img src = {abne} alt="Abne">
+                            <img src = {abne} alt="Abne"/>
                         </div>
                         <div className = "col-md-6">
                             <div className = "bodyProfile">
