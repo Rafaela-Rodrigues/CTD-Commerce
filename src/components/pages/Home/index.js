@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Row } from "react-bootstrap";
+import { Carousel, Row, Col } from "react-bootstrap";
 import CarItem from "../../Carousel/carItem";
 
 export default class Home extends React.Component {
@@ -8,6 +8,7 @@ export default class Home extends React.Component {
             <main>
                 <Carousel>
                     <Carousel.Item >
+                        <Col lg={{ span: 6, offset: 4 }}>
                         <Row>
                         {this.state.itensCarousel1.map(
                             (carItem) => {
@@ -17,8 +18,10 @@ export default class Home extends React.Component {
                             }
                         )}
                         </Row>
+                        </Col>
                     </Carousel.Item>
                     <Carousel.Item >
+                        <Col lg={{ span: 6, offset: 4 }}>
                         <Row>
                         {this.state.itensCarousel2.map(
                             (carItem) => {
@@ -28,6 +31,7 @@ export default class Home extends React.Component {
                             }
                         )}
                         </Row>
+                        </Col>
                     </Carousel.Item>
                 </Carousel>
             </main>
