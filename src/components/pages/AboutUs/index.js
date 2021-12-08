@@ -15,18 +15,10 @@ const AboutUs=() => {
                         </div>
                         <div className="col-md-6">
                             <div className="bodyProfile">
-                                <h4>Beatriz Abne</h4>
+                                <h3>Beatriz Abne</h3>
                                 <h5>Web Developer</h5>
-
-{/* Descrição aluno 1 */}
-                                <ul className="nav nav-tabs" role="tablist">
-                                    <li className="nav-item">
-                                    <a className="nav-link active" id="descricao-tab" data-toggle="tab" href="#descricao" role="tab">Sobre</a>
-                                    </li>
-                                    <li className="nav-item">
-                                    <a className="nav-link active" id="contatos-tab" data-toggle="tab" href="#contatos" role="tab">Contato</a>
-                                    </li>
-                                </ul>
+                                <button>LinkedIn</button>
+                                <button>GitHub</button>
                             </div>
                         </div>
                     </div>
@@ -42,18 +34,10 @@ const AboutUs=() => {
                         </div>
                         <div className="col-md-6">
                             <div className="bodyProfile">
-                                <h4>Dominic</h4>
+                                <h3>Dominic</h3>
                                 <h5>Web Developer</h5>
-
-{/* Descrição aluno 2 */}
-                                <ul className="nav nav-tabs" role="tablist">
-                                    <li className="nav-item">
-                                    <a className="nav-link active" id="descricao-tab" data-toggle="tab" href="#descricao" role="tab">Sobre</a>
-                                    </li>
-                                    <li className="nav-item">
-                                    <a className="nav-link active" id="contatos-tab" data-toggle="tab" href="#contatos" role="tab">Contato</a>
-                                    </li>
-                                </ul>
+                                <button>LinkedIn</button>
+                                <button>GitHub</button>
                             </div>
                         </div>
                     </div>
@@ -69,18 +53,10 @@ const AboutUs=() => {
                         </div>
                         <div className="col-md-6">
                             <div className="bodyProfile">
-                                <h4>Eduardo</h4>
+                                <h3>Eduardo</h3>
                                 <h5>Web Developer</h5>
-
-{/* Descrição aluno 3 */}
-                                <ul className="nav nav-tabs" role="tablist">
-                                    <li className="nav-item">
-                                    <a className="nav-link active" id="descricao-tab" data-toggle="tab" href="#descricao" role="tab">Sobre</a>
-                                    </li>
-                                    <li className="nav-item">
-                                    <a className="nav-link active" id="contatos-tab" data-toggle="tab" href="#contatos" role="tab">Contato</a>
-                                    </li>
-                                </ul>
+                                <button>LinkedIn</button>
+                                <button>GitHub</button>
                             </div>
                         </div>
                     </div>
@@ -96,18 +72,10 @@ const AboutUs=() => {
                         </div>
                         <div className="col-md-6">
                             <div className="bodyProfile">
-                                <h4>Lucas</h4>
+                                <h3>Lucas</h3>
                                 <h5>Web Developer</h5>
-
-{/* Descrição aluno 4 */}
-                                <ul className="nav nav-tabs" role="tablist">
-                                    <li className="nav-item">
-                                    <a className="nav-link active" id="descricao-tab" data-toggle="tab" href="#descricao" role="tab">Sobre</a>
-                                    </li>
-                                    <li className="nav-item">
-                                    <a className="nav-link active" id="contatos-tab" data-toggle="tab" href="#contatos" role="tab">Contato</a>
-                                    </li>
-                                </ul>
+                                <button>LinkedIn</button>
+                                <button>GitHub</button>
                             </div>
                         </div>
                     </div>
@@ -123,18 +91,10 @@ const AboutUs=() => {
                         </div>
                         <div className="col-md-6">
                             <div className="bodyProfile">
-                                <h4>Murilo</h4>
+                                <h3>Murilo</h3>
                                 <h5>Web Developer</h5>
-
-{/* Descrição aluno 5 */}
-                                <ul className="nav nav-tabs" role="tablist">
-                                    <li className="nav-item">
-                                    <a className="nav-link active" id="descricao-tab" data-toggle="tab" href="#descricao" role="tab">Sobre</a>
-                                    </li>
-                                    <li className="nav-item">
-                                    <a className="nav-link active" id="contatos-tab" data-toggle="tab" href="#contatos" role="tab">Contato</a>
-                                    </li>
-                                </ul>
+                                <button>LinkedIn</button>
+                                <button>GitHub</button>
                             </div>
                         </div>
                     </div>
@@ -150,18 +110,10 @@ const AboutUs=() => {
                         </div>
                         <div className="col-md-6">
                             <div className="bodyProfile">
-                                <h4>Rafaela</h4>
+                                <h3>Rafaela</h3>
                                 <h5>Web Developer</h5>
-
-{/* Descrição aluno 6 */}
-                                <ul className="nav nav-tabs" role="tablist">
-                                    <li className="nav-item">
-                                    <a className="nav-link active" id="descricao-tab" data-toggle="tab" href="#descricao" role="tab">Sobre</a>
-                                    </li>
-                                    <li className="nav-item">
-                                    <a className="nav-link active" id="contatos-tab" data-toggle="tab" href="#contatos" role="tab">Contato</a>
-                                    </li>
-                                </ul>
+                                <button>LinkedIn</button>
+                                <button>GitHub</button>
                             </div>
                         </div>
                     </div>
