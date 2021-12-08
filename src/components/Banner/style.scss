@@ -1,0 +1,29 @@
+.banner{
+    background: url(https://images.unsplash.com/photo-1499440009201-89446e0bd9d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
+    min-height: 80vh;
+    max-height: 90vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 200px;
+    display: flex;
+    justify-content: flex-start;
+
+
+    h2{
+        margin: 0 1em 0;
+        padding: 0;
+        font-size: 2.8em;
+        color: white;
+        
+
+    }
+    p{
+        margin: 1em 2em 0;
+        padding: 0;
+        font-size: 1.4em;
+        line-height: 1.5em;
+        color: white;
+    }
+}
