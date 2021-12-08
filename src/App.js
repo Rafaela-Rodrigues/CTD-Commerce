@@ -1,12 +1,11 @@
 import './App.scss';
-import AboutUs from './components/pages/AboutUs';
-
+import Home from './components/pages/Home';
 
 function App() {
   return (
-   <>
-    <AboutUs/>
-   </>
+    <>
+      <Home />
+    </>
   );
 }
 
