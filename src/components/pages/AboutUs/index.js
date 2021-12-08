@@ -1,5 +1,6 @@
-import React from "react";
-import img from "../AboutUs"
+import React from "react-bootstrap";
+import img from "../AboutUs";
+import "./style.scss"
 
 
 const AboutUs=() => {
@@ -11,7 +12,7 @@ const AboutUs=() => {
                 <form method="">
                     <div className="row">
                         <div className="col-md-6">
-                            <img src={"abne.png"} alt="Abne"/>
+                            <img src="{img}" alt="Abne"/>
                         </div>
                         <div className="col-md-6">
                             <div className="bodyProfile">
@@ -30,7 +31,7 @@ const AboutUs=() => {
                 <form method="">
                     <div className="row">
                         <div className="col-md-6">
-                            <img src={"dom.png"} alt="Abne"/>
+                            <img src={img} alt="Dominic"/>
                         </div>
                         <div className="col-md-6">
                             <div className="bodyProfile">
@@ -49,7 +50,7 @@ const AboutUs=() => {
                 <form method="">
                     <div className="row">
                         <div className="col-md-6">
-                            <img src={"edu.png"} alt="Abne"/>
+                            <img src={img} alt="Eduardo"/>
                         </div>
                         <div className="col-md-6">
                             <div className="bodyProfile">
@@ -68,7 +69,7 @@ const AboutUs=() => {
                 <form method="">
                     <div className="row">
                         <div className="col-md-6">
-                            <img src={"lucas.png"} alt="Abne"/>
+                            <img src={img} alt="Lucas"/>
                         </div>
                         <div className="col-md-6">
                             <div className="bodyProfile">
@@ -87,7 +88,7 @@ const AboutUs=() => {
                 <form method="">
                     <div className="row">
                         <div className="col-md-6">
-                            <img src={"murilo.png"} alt="Abne"/>
+                            <img src={img} alt="Murilo"/>
                         </div>
                         <div className="col-md-6">
                             <div className="bodyProfile">
@@ -106,7 +107,7 @@ const AboutUs=() => {
                 <form method="">
                     <div className="row">
                         <div className="col-md-6">
-                            <img src={"rafaela.png"} alt="Abne"/>
+                            <img src={img} alt="Rafaela"/>
                         </div>
                         <div className="col-md-6">
                             <div className="bodyProfile">
