@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Col } from "react-bootstrap"
 
-export default class CarItem extends React.Component {
-    render() {
-        return (
-            <Col md={3} sm={6}>
-                <img className="item d-block w-100" src={this.props.itemSrc} alt={this.props.itemAlt} />
-            </Col>
-        )
-    }
+const CarItem = ({ itemSrc, itemAlt, id }) => {
+    return (
+        <Col md={3} sm={6} key={id} /* as={Link} to={"/"}  */>
+            <img className="item d-block w-100" src={itemSrc} alt={itemAlt} />
+        </Col>
+    )
 }
+
+export default CarItem;
