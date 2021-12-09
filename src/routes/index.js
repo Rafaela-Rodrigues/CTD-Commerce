@@ -11,7 +11,6 @@ const RouteList = () => (
         <Route path="sobrenos" element={<AboutUs />} />
         <Route path="produtos" element={<Products />} />
         <Route path="produtos/categorias/1" element={<Products/>} />
-
       </Routes>
     </BrowserRouter>
   );
