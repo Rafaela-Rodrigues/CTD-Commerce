@@ -1,87 +1,72 @@
+import { Component } from 'react';
 import { Container, Button, Card, Row, Col } from 'react-bootstrap'
+import api from '../../../services/api';
+import Swal from 'sweetalert2';
 import './style.scss';
+import Header from '../../../components/Header'
+import Footer from '../../../components/Footer'
 
+export default class Products extends Component {
 
-const produtos = [
-    {
-        imagem: "https://i.pinimg.com/474x/cd/da/36/cdda36fbac09ad901ce01f3989c60aa6.jpg",
-        titulo: "Tattoo",
-        descricao: "A tatuagem é uma das formas de modificação do corpo mais conhecidas e cultuadas do mundo. Trata-se de uma arte permanente feita na pele humana que, tecnicamente, consiste em uma aplicação subcutânea obtida através da introdução de pigmentos por agulhas.",
-        valor: "67.98",
-    },
-    {
-        imagem: "https://i.pinimg.com/474x/cd/da/36/cdda36fbac09ad901ce01f3989c60aa6.jpg",
-        titulo: "Tattoo",
-        descricao: "A tatuagem é uma das formas de modificação do corpo mais conhecidas e cultuadas do mundo. Trata-se de uma arte permanente feita na pele humana que, tecnicamente, consiste em uma aplicação subcutânea obtida através da introdução de pigmentos por agulhas.",
-        valor: "67.98",
-    },
-    {
-        imagem: "https://i.pinimg.com/474x/cd/da/36/cdda36fbac09ad901ce01f3989c60aa6.jpg",
-        titulo: "Tattoo",
-        descricao: "A tatuagem é uma das formas de modificação do corpo mais conhecidas e cultuadas do mundo. Trata-se de uma arte permanente feita na pele humana que, tecnicamente, consiste em uma aplicação subcutânea obtida através da introdução de pigmentos por agulhas.",
-        valor: "67.98",
-    },
-    {
-        imagem: "https://i.pinimg.com/474x/cd/da/36/cdda36fbac09ad901ce01f3989c60aa6.jpg",
-        titulo: "Tattoo",
-        descricao: "A tatuagem é uma das formas de modificação do corpo mais conhecidas e cultuadas do mundo. Trata-se de uma arte permanente feita na pele humana que, tecnicamente, consiste em uma aplicação subcutânea obtida através da introdução de pigmentos por agulhas.",
-        valor: "67.98",
-    },
-    {
-        imagem: "https://i.pinimg.com/474x/cd/da/36/cdda36fbac09ad901ce01f3989c60aa6.jpg",
-        titulo: "Tattoo",
-        descricao: "A tatuagem é uma das formas de modificação do corpo mais conhecidas e cultuadas do mundo. Trata-se de uma arte permanente feita na pele humana que, tecnicamente, consiste em uma aplicação subcutânea obtida através da introdução de pigmentos por agulhas.",
-        valor: "67.98",
-    },
-    {
-        imagem: "https://i.pinimg.com/474x/cd/da/36/cdda36fbac09ad901ce01f3989c60aa6.jpg",
-        titulo: "Tattoo",
-        descricao: "A tatuagem é uma das formas de modificação do corpo mais conhecidas e cultuadas do mundo. Trata-se de uma arte permanente feita na pele humana que, tecnicamente, consiste em uma aplicação subcutânea obtida através da introdução de pigmentos por agulhas.",
-        valor: "67.98",
-    },
-    {
-        imagem: "https://i.pinimg.com/474x/cd/da/36/cdda36fbac09ad901ce01f3989c60aa6.jpg",
-        titulo: "Tattoo",
-        descricao: "A tatuagem é uma das formas de modificação do corpo mais conhecidas e cultuadas do mundo. Trata-se de uma arte permanente feita na pele humana que, tecnicamente, consiste em uma aplicação subcutânea obtida através da introdução de pigmentos por agulhas.",
-        valor: "67.98",
-    },
-    {
-        imagem: "https://i.pinimg.com/474x/cd/da/36/cdda36fbac09ad901ce01f3989c60aa6.jpg",
-        titulo: "Tattoo",
-        descricao: "A tatuagem é uma das formas de modificação do corpo mais conhecidas e cultuadas do mundo. Trata-se de uma arte permanente feita na pele humana que, tecnicamente, consiste em uma aplicação subcutânea obtida através da introdução de pigmentos por agulhas.",
-        valor: "67.98",
+  constructor() {
+    super();
+    this.state = {
+      produtos: []
     }
-    
-    
-]
+  }
 
-const Products = () => {
+  componentDidMount() {
+    this.handleSubmit({ produtos: '/produtos' });
+  }
 
-    return ( 
-    <>    
-    <Container fluid id="prod-container">
-    <Row>
-    <Col className="d-flex justify-content-start" id="prod"><h1>Produtos</h1></Col>
-    </Row>
-    
-    <Container className="d-flex flex-wrap justify-content-center" id="box-prod">
-    
-    {produtos.map(produto =>
-       
-    <Card style={{ width: '16rem' }}>
-    <Card.Img variant="top" src={produto.imagem} />
-    <Card.Body>
-    <Card.Title>{produto.titulo}</Card.Title>
-    <Card.Text>{produto.descricao}</Card.Text>
-    <Button variant="primary">Ver Mais</Button>
-    </Card.Body>
-    </Card>
-  
-    )}
-    </Container>
-    </Container>
-    </>
-    )
+  handleSubmit = async ({ produtos }) => {
+    try {
+      const response = await api.get(`${produtos}`);
+      this.setState({ produtos: response.data });
+    } catch (error) {
+      Swal.fire({
+        title: error.response.status,
+        icon: 'error',
+        text: error.response.data.message
+      });
+    }
+  }
+
+  render() {
+    return (
+      <>
+          <Header />
+          <Col className="d-flex justify-content-center" id="prod"><h1>Produtos</h1></Col>
+          {this.state.produtos && (
+            <Container fluid style={{ width: '80%', gap: '0.7rem', marginTop: '3rem'}} className="d-flex flex-wrap justify-content-center">
+              
+              
+              {this.state.produtos.map(({ id, nome, preco, descricao, imagem }) => {
+                return (
+                    
+                    
+                    <Card bg="warning" t style={{ width: '16rem', gap: '3rem' }}>
+                    <div id="cardImg">
+                    <Card.Img variant="top" src={imagem} />
+                    </div>
+                    <Card.Body>
+                    <Card.Title>{nome}</Card.Title>
+                    <Card.Body className="d-flex flex-column align-items-center">
+                    <Card.Text>R${preco}</Card.Text>
+                    <Button variant="primary">Ver Mais</Button>
+                    </Card.Body>
+                    </Card.Body>
+                    </Card>
+                    
+
+                )
+              })}
+
+            </Container>
+          )}
+         <Footer />
+      </>
+    );
+  }
 }
 
-export default Products;

@@ -19,8 +19,8 @@ const Header = () => {
       >
       </Nav>
          <NavDropdown title="Categorias" id="navbarScrollingDropdown">
-          <NavDropdown.Item href="#action1">Item 1</NavDropdown.Item>
-          <NavDropdown.Item href="#action2">Item 2</NavDropdown.Item>
+          <NavDropdown.Item href="/produtos">Todos os produtos</NavDropdown.Item>
+          <NavDropdown.Item href="/produtos/categorias/1">Categorias</NavDropdown.Item>
           <NavDropdown.Item href="#action3">Item 3</NavDropdown.Item>
         </NavDropdown>
         <Nav.Link style={{color: 'white'}}><Link to="/sobrenos" className="text-link">Sobre</Link></Nav.Link>

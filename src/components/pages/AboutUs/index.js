@@ -11,7 +11,7 @@ const AboutUs= () => {
         <>
         <Header/>
         <TeamCards/>
-        <Footer/>
+        {/* <Footer/> */}
 
         </>
     )
