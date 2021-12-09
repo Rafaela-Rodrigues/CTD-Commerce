@@ -2,6 +2,7 @@ import { React, useState, useContext } from 'react';
 import { Carousel, Row, Col } from "react-bootstrap";
 import CarItem from "../../Carousel/carItem";
 import Banner from "../../Banner"
+import './style.scss'
 
 const Home = () => {
 
@@ -12,9 +13,9 @@ const Home = () => {
             <Banner />
 
             <main>
-                <Carousel>
-                    <Carousel.Item >
-                        <Col lg={{ span: 6, offset: 4 }}>
+                <Carousel className="carouselClass">
+                    <Carousel.Item className="carItemClass">
+                        <Col lg={{ span: 6, offset: 3 }}>
                             <Row>
                                 {itensCarousel1.map(({ id, itemAlt, itemSrc }) => {
                                     return (
@@ -25,8 +26,8 @@ const Home = () => {
                             </Row>
                         </Col>
                     </Carousel.Item>
-                    <Carousel.Item >
-                        <Col lg={{ span: 6, offset: 4 }}>
+                    <Carousel.Item className="carItemClass">
+                        <Col lg={{ span: 6, offset:3 }}>
                             <Row>
                                 {itensCarousel2.map(({ id, itemAlt, itemSrc }) => {
                                     return (
