@@ -11,3 +11,18 @@
    width: 30px;
    filter: invert(100%); 
 }
+
+
+#nav-container {
+
+    padding: .5rem 8rem;
+}
+
+@media(max-width: 430px) {
+
+    #nav-container {
+
+        padding: .5rem 2rem;
+    }
+
+}
