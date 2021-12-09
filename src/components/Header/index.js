@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import { Nav, Navbar, NavDropdown, Container, Form, FormControl, Button } from 'react-bootstrap'
+import { Nav, Navbar, NavDropdown, Container, Form } from 'react-bootstrap'
 import './style.scss';
 
 const Header = () => {

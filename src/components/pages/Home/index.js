@@ -1,13 +1,30 @@
 import { React, useState, useContext } from 'react';
 import { Carousel, Row, Col } from "react-bootstrap";
+import Swal from 'sweetalert2';
 import CarItem from "../../Carousel/carItem";
 import Banner from "../../Banner"
 import Header from "../../Header"
+import Footer from "../../Footer"
+import api from "../../../services/api"
 import './style.scss'
 
 const Home = () => {
 
     const [carItem] = useState([]);
+    const [produtos, setProdutos] = useState([]);
+
+    const handleSubmit = async ({ categorias_id }) => {
+        try {
+          const response = await api.get(`/produtos/categorias/1}`);
+          setProdutos(response.data);
+        } catch (error) {
+          Swal.fire({
+            title: error.response.status,
+            icon: 'error',
+            text: error.response.data.message
+          });
+        }
+      }
 
     return (
         <>
@@ -42,6 +59,7 @@ const Home = () => {
                     </Carousel.Item>
                 </Carousel>
             </main>
+            <Footer />
         </>
     );
 }
