@@ -1,0 +1,54 @@
+.team-card{
+    width: 286px;
+    box-shadow: red;
+    border-radius: 12px;
+    overflow: hidden;
+    
+    img{
+        border-radius: 50%;
+        max-width: 70%;
+        margin: 30px auto;
+    }
+
+    .card-title.h5{
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+
+    .team-card-button{
+        width: 100%;
+        position: relative;
+
+        a{
+            color: red;
+            font-weight: bold;
+        }
+
+        &::before{
+            content: " ";
+            position: absolute;
+            left: 8px;
+            height: calc(100% - 16px);
+            width: 24px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &.github::before{
+            background-image: url('');
+        }
+
+        &.linkedin::before{
+            background-image: url('');
+        }
+    }
+}
+h1{
+    margin-top: 8rem;
+    color: white;
+    text-align: center;
+}
+#userCard:hover{
+    transform:scale(1rem);
+}
