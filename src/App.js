@@ -1,12 +1,11 @@
 import './App.scss';
-import AboutUs from './components/pages/AboutUs';
-
+import RouteList from './routes';
 
 function App() {
   return (
-   <>
-    <AboutUs/>
-   </>
+    <>
+      <RouteList />
+    </>
   );
 }
 
