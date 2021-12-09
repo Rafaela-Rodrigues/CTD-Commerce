@@ -1,8 +1,6 @@
-@import '../AboutUsComponents/cardTeam.js';
-
 .team-card{
     width: 286px;
-    box-shadow: $card-shadow;
+    box-shadow: red;
     border-radius: 12px;
     overflow: hidden;
     
@@ -23,7 +21,7 @@
         position: relative;
 
         a{
-            color: $light-gray;
+            color: red;
             font-weight: bold;
         }
 
@@ -45,4 +43,12 @@
             background-image: url('');
         }
     }
+}
+h1{
+    margin-top: 8rem;
+    color: white;
+    text-align: center;
+}
+#userCard:hover{
+    transform:scale(1rem);
 }

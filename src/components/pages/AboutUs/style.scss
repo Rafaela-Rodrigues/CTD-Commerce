@@ -1,15 +1,29 @@
 .body{
     padding: 20px;
     margin: 20px;
+    background-color: lightgray;
+
 }
 #profileTeam{
     padding: 20px;
-    border: black;
+    border: white;
     border-radius: 15px;
 }
 #button{
     justify-content: space-between;
     border-radius: 30px;
-    
+}   
+#iconSocial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 
+}
+.iconLinkedIn{
+    width: 100px;
+
+}
+.iconGitHub{
+    width: 50px;
 }
