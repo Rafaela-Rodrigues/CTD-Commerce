@@ -7,8 +7,8 @@ const Header = () => {
     return (     
     <>
     <Navbar variant="dark" expand="lg" className="nav" fixed="top">
-    <Container fluid style={{padding: '.5rem 2.5rem'}} id="nav-container">
-    <Navbar.Brand href="#">Uai tattoo <img src="https://www.freeiconspng.com/uploads/tattoo-dragon-png-10.png" id="logo-img"/></Navbar.Brand>
+    <Container fluid style={{padding: '.5rem 4.3rem'}} id="nav-container">
+    <Navbar.Brand href="#">Uai Tatu <img src="https://www.freeiconspng.com/uploads/tattoo-dragon-png-10.png" id="logo-img"/></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav

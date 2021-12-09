@@ -2,6 +2,7 @@ import { React, useState, useContext } from 'react';
 import { Carousel, Row, Col } from "react-bootstrap";
 import CarItem from "../../Carousel/carItem";
 import Banner from "../../Banner"
+import Header from "../../Header"
 import './style.scss'
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
 
     return (
         <>
+            <Header />
             <Banner />
 
             <main>
