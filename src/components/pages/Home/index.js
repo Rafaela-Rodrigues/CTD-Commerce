@@ -5,13 +5,13 @@ import CarItem from "../../Carousel/carItem";
 import Banner from "../../Banner"
 import Header from "../../Header"
 import Footer from "../../Footer"
-import api from "../../../services/api"
+//import api from "../../../services/api"
 import './style.scss'
 
 const Home = () => {
 
     const [carItem] = useState([]);
-    const [produtos, setProdutos] = useState([]);
+    /* const [produtos, setProdutos] = useState([]);
 
     const handleSubmit = async ({ categorias_id }) => {
         try {
@@ -24,7 +24,7 @@ const Home = () => {
             text: error.response.data.message
           });
         }
-      }
+      } */
 
     return (
         <>
@@ -38,7 +38,7 @@ const Home = () => {
                             <Row>
                                 {itensCarousel1.map(({ id, itemAlt, itemSrc }) => {
                                     return (
-                                        <CarItem className="item" itemSrc={itemSrc} itemAlt={itemAlt} key={id} />
+                                        <CarItem className="item" itemSrc={itemSrc} itemAlt={itemAlt} key={id} id={id} />
                                     );
                                 }
                                 )}
@@ -50,7 +50,7 @@ const Home = () => {
                             <Row>
                                 {itensCarousel2.map(({ id, itemAlt, itemSrc }) => {
                                     return (
-                                        <CarItem className="item" itemSrc={itemSrc} itemAlt={itemAlt} key={id} />
+                                        <CarItem className="item" itemSrc={itemSrc} itemAlt={itemAlt} key={id} id={id}/>
                                     );
                                 }
                                 )}

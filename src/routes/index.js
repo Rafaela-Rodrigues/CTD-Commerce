@@ -6,7 +6,7 @@ const RouteList = () => (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="sobrenos" element={<AboutUs />} />
+        <Route path="/sobrenos" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>
   );
