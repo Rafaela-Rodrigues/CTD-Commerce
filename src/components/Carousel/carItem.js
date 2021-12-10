@@ -1,11 +1,17 @@
 import React from "react";
-import { Col } from "react-bootstrap"
+import { Col, Button, Card } from "react-bootstrap"
 
-const CarItem = ({ id, nome, descricao,imagem}) => {
-    console.log(id)
+const CarItem = ({ id, nome, descricao, imagem }) => {
     return (
-        <Col md={4} sm={6} key={id} className={`${ id===2 ? "d-none d-sm-block" : id===3 ? "d-none d-md-block" : "" }`} /* as={Link} to={"/"}  */ >
-            <img className="item d-block w-100" src={imagem} alt={descricao} />
+        <Col md={4} sm={6} key={id} className={`${id === 2 || id === 5 ? "d-none d-sm-block" : id === 3 || id === 6 ? "d-none d-md-block" : ""}`}>
+            <Card bg="warning" className="item d-block w-100" style={{ width: '16rem', gap: '1.2rem' }}>
+                <div id="cardImg">
+                    <Card.Img variant="top" src={imagem} alt={descricao} />
+                </div>
+                <Card.Body>
+                    <Card.Title>{nome}</Card.Title>
+                </Card.Body>
+            </Card>
         </Col>
     )
 }
