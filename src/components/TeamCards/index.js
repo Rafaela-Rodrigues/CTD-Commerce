@@ -39,7 +39,7 @@ console.log(team[1].name)
 const TeamCards = () => {
     return (
         <>
-         <h1>Team Tatu</h1>
+         <h1>Team Uai Tatu</h1>
         <Container fluid style={{ width: '80%', gap: '0.7rem', marginTop: '3rem'}} className="d-flex flex-wrap justify-content-center">
         {team.map(user =>
           <Card style={{ width: '23rem'}} id="userCard">
@@ -52,7 +52,7 @@ const TeamCards = () => {
           </Card.Body>
         
           <Card.Body id="iconSocial">
-            <Card.Link target="_blank" href={user.linkedin}><img className="iconLinkedIn" src="https://www.freeiconspng.com/uploads/linkedin-9.png" alt="linkedIn"/></Card.Link>
+            <Card.Link target="_blank" href={user.linkedin}><img className="iconLinkedIn" src="https://www.freeiconspng.com/uploads/linkedin-logo-3.png" alt="linkedIn"/></Card.Link>
             <Card.Link target="_blank" href={user.github}><img className="iconGitHub"src="https://www.freeiconspng.com/uploads/github-logo-icon-20.png" alt="github"/></Card.Link>
           </Card.Body>
         </Card>       
