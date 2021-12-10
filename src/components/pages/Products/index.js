@@ -32,10 +32,10 @@ const Products = ({escolha}) => {
         <Header />
         <h1>Produtos</h1>
         {produtos.length !==0 && (
-          <Container fluid style={{ width: '80%', gap: '0.7rem', marginTop: '3rem' }} className="d-flex flex-wrap justify-content-center">
+          <Container bg fluid style={{ width: '80%', gap: '0.7rem', marginTop: '3rem' }} className="d-flex flex-wrap justify-content-center">
             {produtos.map(({ nome, preco, imagem }) => {
               return (
-                <Card bg="warning" style={{ width: '16rem', gap: '3rem' }}>
+                <Card bg="dark" text="light" style={{ width: '16rem', gap: '3rem' }}>
                   <div id="cardImg">
                     <Card.Img variant="top" src={imagem}/>
                   </div>
@@ -43,7 +43,7 @@ const Products = ({escolha}) => {
                     <Card.Title>{nome}</Card.Title>
                     <Card.Body className="d-flex flex-column align-items-center">
                       <Card.Text> R&#36;{preco}</Card.Text>
-                      <Button variant="dark">Ver Mais</Button>
+                      <Button variant="light">Ver Mais</Button>
                     </Card.Body>
                   </Card.Body>
                 </Card>
