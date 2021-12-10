@@ -47,3 +47,16 @@
         }
     }
 }
+
+@media(max-width: 280px) {
+
+    .banner {
+
+        padding: 80px 0 200px ;
+        
+        h2, p {
+             
+            margin: 2rem;
+        }
+    }
+}

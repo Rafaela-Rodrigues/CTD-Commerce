@@ -1,14 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import { Nav, Navbar, NavDropdown, Container, Form, FormControl, Button } from 'react-bootstrap'
+import { Nav, Navbar, NavDropdown, Container, Form} from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 import './style.scss';
 
 const Header = () => {
 
   return (
     <>
-    <Navbar variant="dark" expand="lg" className="nav" fixed="top">
+    <Navbar variant="dark" expand="lg" className="nav" fixed="top" >
     <Container fluid id="nav-container">
-    <Navbar.Brand href="#">Uai Tatu <img src="https://www.freeiconspng.com/uploads/tattoo-dragon-png-10.png" id="logo-img"/></Navbar.Brand>
+    <Navbar.Brand ><Link to="/" className="text-link" >Uai Tatu</Link><img src="https://www.freeiconspng.com/uploads/tattoo-dragon-png-10.png" id="logo-img"/></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
@@ -18,13 +19,14 @@ const Header = () => {
       >
       </Nav>
          <NavDropdown title="Categorias" id="navbarScrollingDropdown">
-          <NavDropdown.Item href="#action1">Item 1</NavDropdown.Item>
-          <NavDropdown.Item href="#action2">Item 2</NavDropdown.Item>
-          <NavDropdown.Item href="#action3">Item 3</NavDropdown.Item>
+          <NavDropdown.Item><Link to="/produtos" >Produtos</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link to="/produtos/categorias/1">Agulhas</Link></NavDropdown.Item>
+          <NavDropdown.Item href="/produtos/categorias/4">Batoques</NavDropdown.Item>
+          <NavDropdown.Item href="/produtos/categorias/3">Máquinas</NavDropdown.Item>
+          <NavDropdown.Item href="/produtos/categorias/2">Tintas</NavDropdown.Item>
         </NavDropdown>
-        <Nav.Link href="#action1" style={{color: 'white'}}>Sobre</Nav.Link>
+        <Nav.Link style={{color: 'white'}}><Link to="/sobrenos" className="text-link">Sobre</Link></Nav.Link>
         <Nav.Link href="#action1"><img src="https://www.freeiconspng.com/thumbs/shopping-cart-icon/shopping-cart-icon-2.png" id="cart-img" alt="" /></Nav.Link>
-        
         <Form className="d-flex">
       </Form>
     </Navbar.Collapse>
