@@ -35,7 +35,6 @@ const team = [
   }
 ]
 
-console.log(team[1].name)
 const TeamCards = () => {
     return (
         <>
@@ -52,13 +51,12 @@ const TeamCards = () => {
           </Card.Body>
         
           <Card.Body id="iconSocial">
-            <Card.Link target="_blank" href={user.linkedin}><img className="iconLinkedIn" src="https://www.freeiconspng.com/uploads/linkedin-9.png" alt="linkedIn"/></Card.Link>
+            <Card.Link target="_blank" href={user.linkedin}><img className="iconLinkedIn" src="https://www.freeiconspng.com/uploads/linkedin-logo-3.png" alt="linkedIn"/></Card.Link>
             <Card.Link target="_blank" href={user.github}><img className="iconGitHub"src="https://www.freeiconspng.com/uploads/github-logo-icon-20.png" alt="github"/></Card.Link>
           </Card.Body>
         </Card>       
          )}
          </Container>
-
 </>
     )
 }

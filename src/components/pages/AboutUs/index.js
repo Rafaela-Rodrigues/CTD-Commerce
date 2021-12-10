@@ -5,14 +5,12 @@ import TeamCards from "../../TeamCards"
 import Footer from "../../Footer"
 
 
-
 const AboutUs= () => {
     return (
         <>
         <Header/>
         <TeamCards/>
-        {/* <Footer/> */}
-
+        <Footer/> 
         </>
     )
 }
