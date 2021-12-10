@@ -18,12 +18,12 @@ const Header = () => {
         navbarScroll
       >
       </Nav>
-         <NavDropdown title="Categorias" id="navbarScrollingDropdown">
-          <NavDropdown.Item><Link to="/produtos" >Produtos</Link></NavDropdown.Item>
-          <NavDropdown.Item><Link to="/produtos/categorias/1">Agulhas</Link></NavDropdown.Item>
-          <NavDropdown.Item href="/produtos/categorias/4">Batoques</NavDropdown.Item>
-          <NavDropdown.Item href="/produtos/categorias/3">Máquinas</NavDropdown.Item>
-          <NavDropdown.Item href="/produtos/categorias/2">Tintas</NavDropdown.Item>
+         <NavDropdown menuVariant="dark" title="Categorias" id="nav-dropdown-dark-example" >
+          <NavDropdown.Item><Link className="text-link"to="/produtos">Produtos</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link className="text-link"to="/produtos/categorias/1">Agulhas</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link className="text-link"to="/produtos/categorias/4">Batoques</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link className="text-link"to="/produtos/categorias/3">Máquinas</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link className="text-link"to="/produtos/categorias/2">Tintas</Link></NavDropdown.Item>
         </NavDropdown>
         <Nav.Link style={{color: 'white'}}><Link to="/sobrenos" className="text-link">Sobre</Link></Nav.Link>
         <Nav.Link href="#action1"><img src="https://www.freeiconspng.com/thumbs/shopping-cart-icon/shopping-cart-icon-2.png" id="cart-img" alt="" /></Nav.Link>
