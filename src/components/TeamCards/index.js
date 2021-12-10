@@ -40,9 +40,9 @@ const TeamCards = () => {
     return (
         <>
          <h1>Team Tatu</h1>
-        <Container fluid style={{ width: '80%', gap: '0.7rem', marginTop: '3rem'}} className="d-flex flex-wrap justify-content-center">
+        <Container fluid style={{ width: '90%', gap: '1.2rem', marginTop: '3rem'}} className="d-flex flex-wrap justify-content-center">
         {team.map(user =>
-          <Card style={{ width: '23rem'}} id="userCard">
+          <Card style={{ width: '20rem'}} id="userCard">
           <Card.Img variant="top" src={user.img} />
           <Card.Body>
             <Card.Title>{user.name}</Card.Title>
