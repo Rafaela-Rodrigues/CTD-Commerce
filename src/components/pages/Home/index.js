@@ -32,15 +32,14 @@ const Home = () => {
         <>
             <Header />
             <Banner />
-
             <main>
                 <Carousel className="carouselClass">
                     <Carousel.Item className="carItemClass">
                         <Col lg={{ span: 6, offset: 3 }}>
                             <Row>
-                                {produtos.length!==0 && (produtos.map(({ id, nome, descricao, imagem }) => {
+                                {produtos.length !== 0 && (produtos.map(({ id, nome, descricao, imagem }) => {
                                     return (
-                                        <CarItem className="item" imagem={imagem} descricao={descricao} key={id} id={id} />
+                                        <CarItem className="item" nome={nome} imagem={imagem} descricao={descricao} key={id} id={id} />
                                     );
                                 }
                                 ).slice(0, 3))}
@@ -50,9 +49,9 @@ const Home = () => {
                     <Carousel.Item className="carItemClass">
                         <Col lg={{ span: 6, offset: 3 }}>
                             <Row>
-                            {produtos.length!==0 && (produtos.map(({ id, nome, descricao, imagem }) => {
+                                {produtos.length !== 0 && (produtos.map(({ id, nome, descricao, imagem }) => {
                                     return (
-                                        <CarItem className="item" imagem={imagem} descricao={descricao} key={id} id={id} />
+                                        <CarItem className="item" nome={nome} imagem={imagem} descricao={descricao} key={id} id={id} />
                                     );
                                 }
                                 ).slice(3, 6))}
@@ -61,7 +60,6 @@ const Home = () => {
                     </Carousel.Item>
                 </Carousel>
             </main>
-
             <Footer />
         </>
     );

@@ -41,7 +41,7 @@ const Products = () => {
                     <Card.Title>{nome}</Card.Title>
                     <Card.Body className="d-flex flex-column align-items-center">
                       <Card.Text>R${preco}</Card.Text>
-                      <Button variant="primary">Ver Mais</Button>
+                      <Button variant="dark">Ver Mais</Button>
                     </Card.Body>
                   </Card.Body>
                 </Card>
