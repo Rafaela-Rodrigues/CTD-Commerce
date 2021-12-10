@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import { Nav, Navbar, NavDropdown, Container, Form} from 'react-bootstrap'
+import { Nav, Navbar, NavDropdown, Container, Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import './style.scss';
 
