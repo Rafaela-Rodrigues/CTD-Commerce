@@ -13,7 +13,7 @@ const Products = ({escolha}) => {
     async function pegaProdutos(){
       try {
       const response = await api.get(escolha);
-        setProd(response.data);
+      setProd(response.data);
     } catch (error) {
       Swal.fire({
         title: error.response.status,
@@ -28,6 +28,7 @@ const Products = ({escolha}) => {
 
     return (
       <>
+      
         <Header />
         <h1>Produtos</h1>
         {produtos.length !==0 && (
