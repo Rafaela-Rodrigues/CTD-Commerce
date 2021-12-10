@@ -6,13 +6,13 @@ import './style.scss';
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
 
-const Products = () => {
+const Products = ({escolha}) => {
   const[produtos, setProd] = useState([]);
 
   useEffect(() => {
     async function pegaProdutos(){
       try {
-      const response = await api.get('/produtos');
+      const response = await api.get(escolha);
         setProd(response.data);
     } catch (error) {
       Swal.fire({
@@ -24,6 +24,7 @@ const Products = () => {
   }
   pegaProdutos();
   }, [])
+
 
     return (
       <>
